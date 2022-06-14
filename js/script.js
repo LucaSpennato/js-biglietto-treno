@@ -1,9 +1,3 @@
-// Sulla base di queste informazioni dovrà calcolare il prezzo totale del viaggio,
-//  secondo queste regole:
-// il prezzo del biglietto è definito in base ai km (0.21 € al km)
-// va applicato uno sconto del 20% per i minorenni
-// va applicato uno sconto del 40% per gli over 65.
-
 // definiamo il prezzo per km
 const pricePerKm = 0.21;
 
@@ -18,8 +12,8 @@ let paymentPerKm = pricePerKm * kmChoose;
 let userAge = parseInt ( prompt ('Inserisci la tua età') );
 
 // definiamo gli sconti 
-let minorSale = parseInt ('20');
-let elderSale = parseInt ('40');
+let minorSale = 20;
+let elderSale = 40;
 
 
 if (userAge < 18) {
